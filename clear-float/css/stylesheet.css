@@ -8,6 +8,7 @@
     /* height: 400px; we removed this so the height would respond to the elements */
     background-color: #999;
     margin: 0 auto; /* this is to center the container */
+    overflow: hidden;
 }
 section {
     width: 300px;

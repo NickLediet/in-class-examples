@@ -1,0 +1,47 @@
+@charset 'UTF-8';
+
+.hidden {
+    display:none;
+}
+
+body, header, footer, nav, section, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+     width: 960px;
+     margin: 0 auto;
+     background-color: #efefef; 
+}
+
+/* header */
+#mainHeader{
+    width: 960px;
+    height: 160px;
+    background-color: #0FF;
+    position: relative;
+}
+#logo {
+    width: 150px;
+    height: 100px;
+    background-color: #0CC;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    
+}
+
+/* nav */
+#mainNav {
+    float: right;
+    height: 100px;
+    width: 200px;
+    background-color: #0CC;
+    margin-top: 20px;
+    
+}
+
+/* content */
+
+/* footer */

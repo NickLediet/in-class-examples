@@ -1,0 +1,23 @@
+@charset 'UTF-8';
+
+.hidden {
+    display:none;
+}
+#container {
+    width: 960px; /* monitors 1024 or above, not great for responsive however */
+    height: 400px;
+    background-color: #999;
+    margin: 0 auto; /* this is to center the container */
+}
+section {
+    width: 300px;
+    height: 200px;
+}
+#section1 {
+    float: left;
+    background-color: #063; /* I hate this colour. Marco why is it always this damn colour */
+}
+#section2 {
+    float: right;
+    background-color: #0FC;
+}

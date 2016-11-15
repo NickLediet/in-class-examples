@@ -43,5 +43,50 @@ body, header, footer, nav, section, h1, h2, p {
 }
 
 /* content */
+#content-area-1, #content-area-2 {
+    width: 470px;
+    height: 400px;
+    background-color: #0CC;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#content-area-1 {
+    float:left;
+}
+
+#content-area-2 {
+    float:right;
+}
+
+#doubleContent {
+    /* You can't put margin top here, as there is no point of reference due 
+        to the floats.  Instead put margin-bottom:x px; on the content */
+    width: 960px;
+    height: 400px;
+    background-color:#0CC;
+    clear:both;
+}
+
 
 /* footer */
+#mainFooter {
+    height:80px;
+    background-color: #0FF;
+    width: 960px;
+    margin-top: 20px;
+}
+#copyright {
+    height: 50px;
+    background-color: #0CC;
+    width: 150px;
+    /* collapsing margins, CSS Quirk
+       When two margins touch each other, it causes the margins to collapse */
+       /* fix 1 */
+    /* padding-top: 20px; The issue is this adds to the total hieght; */
+    /* this is the other fix */
+    margin-top: 19px;
+    padding-top: 1px;
+
+}

@@ -19,8 +19,10 @@ body {
     font-family: Helvetica, Arial, Helvetica, sans-serif;
     font-size: 14px;
     color: black;
-    background-color: #ccc;
-    background: url(../images/wov2.png);
+    /*background-color: #ccc;*/
+    background: #ccc url(../images/wov2.png); /* we can pass background-color: 
+                                                    in background: so that is defaults
+                                                     if the image in unavailable */
 }
 
 /* Header */
@@ -36,6 +38,7 @@ body {
     width: 215px;
     height: 74px;
 }
+
 /* Nav */
 #mainNav {
     width: 560px;
@@ -49,21 +52,19 @@ body {
     padding: 0;
     margin-top: 62px;
 }
-#mainNav ul li
-{
+#mainNav ul li {
     display: inline;
     margin-left: 25px;
 }
-#mainNav ul li a
-{
+#mainNav ul li a {
     color: #2073a8;
     padding: 5px;
 }
 #mainNav ul li a:hover {
-    background-color: #ddeff7;
+    background: #ddeff7;
 }
 .selected {
-    background-color: #ddeff7;
+    background: #ddeff7;
     padding: 5px;
 }
 header h2 {
@@ -79,11 +80,15 @@ header h3 {
     font-size: 14;
     font-weight: normal;
 }
-/* content */
+
+/* Content */
+
+/* Section 1 : Resources */
 #resources {
     overflow: hidden; /*prevent collapsing, no hard height*/
     padding: 30px 20px 0px 20px; /*tblr*/
 }
+/* We are floating the three elements left here so that they stack beside eachother */
 #packages, #fishGuide {
     width: 300px;
     float: left;
@@ -92,4 +97,57 @@ header h3 {
 #donate {
     width: 300px;
     float: left;
+}
+#resources p {
+    font-size: 16px;
+    line-height: 20px;
+    color: #666;
+    margin-top: 20px;
+}
+.resBut {
+    background: #61a3c1;
+    width: 100px;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 15px;
+    text-align: center;
+    color:#fff;
+}
+.resBut:hover {
+    background: #3f6e84;
+}
+
+/* Section 2: Testimonials */
+#testimonial1, #testimonial2 {
+    background: #efefef;
+    height: 170px;
+    width: 460px; 
+    margin-bottom: 20px;
+}
+/* positioning */
+#testimonial1 { clear: both; float: left; }
+#testimonial2 { float: right; }
+
+.testImage {
+    float:left;
+    margin: 20px 10px 15px;/* I have literally no idea why I can do this
+                              without putting in a bottom, but whatever */
+}
+.testimonialName {
+    display: block;
+    font-weight: bold;
+    color: #61a3c1;
+    margin: 15px; /* again, I don't really know why this works,
+                     but let's roll with it */
+}
+
+/* Footer */
+#mainFooter {
+    height: 124px;
+    width: 980px;
+    background: url(../images/footer_bg.jpg) repeat-x; /* this is cool, because
+                                                          it is kinda like having a gradient without
+                                                          having to write one */
+    
 }

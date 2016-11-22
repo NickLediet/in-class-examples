@@ -149,5 +149,57 @@ header h3 {
     background: url(../images/footer_bg.jpg) repeat-x; /* this is cool, because
                                                           it is kinda like having a gradient without
                                                           having to write one */
-    
+}
+#logoFooter {
+    float: left;
+    margin: 25px auto 20px 20px;
+}
+#socialMediaCon {
+    float: right; 
+}
+.fa {
+    font-size: 45px;
+}
+#iconNav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#iconNav li {
+    float: left;
+}
+#iconNav a .fa {
+    color: #666;
+    display: block;
+    filter: grayscale(100%);
+}
+#iconNav a:hover{
+    filet: grayscale(0%);
+}
+#footerNav {
+    clear:both;
+}
+#footerNav ul {
+    list-style: none;
+}
+#footerNav  ul li {
+    display: inline;
+    color: #666;    
+    font-size: 12px;
+    margin-right: 12px;
+}
+#footerNav ul li a {
+    color: #333;
+}
+#footernav ul li a:hover {
+    color: #999;
+}
+
+/* Contact Page Styles */
+/* Header */
+#mainHeaderContact {
+    height: 490px;
+    width: 980px;
+    background: url(../images/contact_header.jpg) no-repeat bottom;
+    overflow: hidden;
 }

@@ -1,0 +1,95 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* CSS Rules */
+* { margin:0; padding: 0; }
+img{ border: none; margin: 0; padding: 0; }
+a { text-decoration: none; }
+
+/* Default Specs */
+#container {
+    width: 980px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.hidden {
+    display: none;
+}
+body {
+    font-family: Helvetica, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: black;
+    background-color: #ccc;
+    background: url(../images/wov2.png);
+}
+
+/* Header */
+#mainHeader {
+    height: 490px;
+    width: 980px;
+    background: url(../images/home_header.jpg) no-repeat bottom;
+    overflow: hidden;
+}
+#logoHeader {
+    float: left;
+    margin: 10px 0 20px 0; /*top bottom left right*/
+    width: 215px;
+    height: 74px;
+}
+/* Nav */
+#mainNav {
+    width: 560px;
+    float: right;
+    margin: 0 0 0 15px;
+   /* background-color: red;*/
+}
+#mainNav ul /* selects the ul only in mainNav */ {
+    list-style-type: none; /*removes bullets*/
+    float: right;
+    padding: 0;
+    margin-top: 62px;
+}
+#mainNav ul li
+{
+    display: inline;
+    margin-left: 25px;
+}
+#mainNav ul li a
+{
+    color: #2073a8;
+    padding: 5px;
+}
+#mainNav ul li a:hover {
+    background-color: #ddeff7;
+}
+.selected {
+    background-color: #ddeff7;
+    padding: 5px;
+}
+header h2 {
+    clear: both;
+    color: #fff;
+    font-size: 31px;
+    margin-top: 410px;
+    text-align: center;
+}
+header h3 {
+   text-align: center;
+    color: #fff;
+    font-size: 14;
+    font-weight: normal;
+}
+/* content */
+#resources {
+    overflow: hidden; /*prevent collapsing, no hard height*/
+    padding: 30px 20px 0px 20px; /*tblr*/
+}
+#packages, #fishGuide {
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+}
+#donate {
+    width: 300px;
+    float: left;
+}

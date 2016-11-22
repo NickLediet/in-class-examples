@@ -1,0 +1,82 @@
+
+/* Contact Page Styles */
+/* Header */
+#mainHeaderContact   {
+    height: 490px;
+    width: 980px;
+    background: url(../images/contact_header.jpg) no-repeat bottom;
+    overflow: hidden;
+}
+
+/* Contact Content */
+#mainContact {
+    overflow: hidden;
+    width: 940px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+#mainContact h2 {
+    font-size: 30px;
+    color: #2073a8;
+    background: #ddeff7;
+    padding: 8px 0px 8px 5px;
+    margin-bottom: 40px;
+}
+
+#contactArea {
+    width: 469px;
+    float: left;
+    border-right: solid 1px #ccc;
+}
+#contactText {
+    font: 21px;
+    margin: 0 0 30px 0;
+    width: 340px;
+}
+
+input, textarea {
+    display: block;
+    width: 300px;
+    padding: 10px;
+    margin: 0 0 20px 0;
+    background: #efefef;
+    border: 1px solid #999;
+    color: #333;    
+    resize: none; /* this is so the users cannot resize the comments */
+}
+#comments {
+    width: 360px;
+    height: 200px;
+}
+#submit {
+    display: block;
+    width: 75px;
+    height: 30px;
+    background: #2083a8;
+    text-align: center;
+    color: #fff;
+    font: 14px;
+    border: 1px solid #003471;
+    padding: 5px 10px; /* 5 t/b 10 r/l */
+}
+
+/* Map Area */
+#mapArea {
+    float: left;
+    width: 380px;
+    margin-left: 90px;  
+}
+#mapArea h3 {
+    font: 21px;
+    color: #2073a8;
+}
+#mapArea ul {
+    list-style: none;
+    padding: 0;
+}
+iframe {
+    margin: 15px 0 0 0;
+}
+
+

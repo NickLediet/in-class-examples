@@ -1,6 +1,11 @@
 @charset "UTF-8";
 /* CSS Document */
 
+/* Contact Page */
+@import url(contact.css); /* this is a lot like linking a css to html
+                             instead we import contac.css so that is is a part of 
+                             main.css, really I just hate long documents */
+
 /* CSS Rules */
 * { margin:0; padding: 0; }
 img{ border: none; margin: 0; padding: 0; }
@@ -195,11 +200,3 @@ header h3 {
     color: #999;
 }
 
-/* Contact Page Styles */
-/* Header */
-#mainHeaderContact {
-    height: 490px;
-    width: 980px;
-    background: url(../images/contact_header.jpg) no-repeat bottom;
-    overflow: hidden;
-}
